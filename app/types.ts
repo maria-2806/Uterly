@@ -1,1 +1,0 @@
-export type TabType = 'calendar' | 'insights' | 'reminders' | 'chat';
