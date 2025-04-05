@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en">
-        <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <body className={`${geistSans.variable} ${geistMono.variable} antialiased flex justify-center`}>
           <ThemeProvider attribute="class" defaultTheme="light">
             <ThemeProviderCustom defaultPhase={CyclePhase.MENSTRUAL}>
               {/* Clerk Auth Buttons Header */}
