@@ -1,47 +1,99 @@
-Uterly - Period Tracking & PCOS Detection App A comprehensive period tracking application with PCOS detection capabilities, built with React, Express, and TensorFlow.js.
+# 🌸 Uterly – Period Tracking & PCOS Detection App
 
-Features
+**Uterly** is a comprehensive period tracking application designed to empower users with advanced cycle tracking, PCOS detection, AI-powered health insights, and a beautiful mobile-responsive interface.
 
-📅 Period & Cycle Tracking
-🔍 PCOS Detection using Machine Learning
-💬 AI Chatbot for Health Insights
-⏰ Customizable Reminders
-📊 Health Analytics & Insights
-📱 Mobile-Responsive Design
-Tech Stack
+---
 
-Frontend: React + Vite + TypeScript
-Backend: Express.js
-Database: PostgreSQL with Drizzle ORM
-AI/ML: TensorFlow.js, Google Gemini API
-Styling: Tailwind CSS + shadcn/ui
-Getting Started
+## ✨ Features
 
-Click the "Run" button to start the development server
-The application will be available at port 5000
-Hot reloading is enabled for development
-Project Structure
+- 📅 **Period & Cycle Tracking**  
+- 🔍 **PCOS Detection** using Machine Learning  
+- 💬 **AI Chatbot** for Personalized Health Insights  
+- ⏰ **Customizable Reminders**  
+- 📊 **Health Analytics & Insights**  
+- 📱 **Mobile-Responsive Design**
 
+---
+
+## 🧰 Tech Stack
+
+- **Frontend:** React + Vite + TypeScript  
+- **Backend:** Express.js  
+- **Database:** PostgreSQL + Drizzle ORM  
+- **AI/ML:** TensorFlow.js, Google Gemini API  
+- **Styling:** Tailwind CSS + shadcn/ui  
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/your-username/uterly.git
+cd uterly
+```
+
+### 2. Install dependencies
+
+```bash
+# For the client
+cd client
+npm install
+
+# For the server
+cd ../server
+npm install
+```
+
+### 3. Set up environment variables
+
+Create a `.env` file in the `server/` directory or use Replit Secrets with the following:
+
+```
+GEMINI_API_KEY=your_gemini_api_key_here
+DATABASE_URL=your_postgresql_connection_string_here
+```
+
+### 4. Run the development server
+
+```bash
+# From the project root
+npm run dev
+```
+
+The application will be available at **http://localhost:5000**  
+Hot reloading is enabled for development.
+
+---
+
+## 📁 Project Structure
+
+```
+uterly/
 ├── client/        # React frontend
 ├── server/        # Express backend
 ├── shared/        # Shared types and schemas
 ├── models/        # ML models
 └── uploads/       # Temporary file storage
-Environment Variables
+```
 
-Required environment variables (set via Replit Secrets):
+---
 
-GEMINI_API_KEY: For AI chatbot functionality
-DATABASE_URL: PostgreSQL connection string
-API Routes
+## 🔗 API Endpoints
 
-/api/period-logs: Period logging endpoints
-/api/cycles: Menstrual cycle management
-/api/reminders: Reminder system
-/api/chat: AI chatbot interactions
-Database Schema
+- `POST /api/period-logs` – Create and manage period logs  
+- `GET /api/cycles` – Retrieve calculated cycle data  
+- `POST /api/reminders` – Create and manage reminders  
+- `POST /api/chat` – Get responses from the AI chatbot  
 
-users: User management
-period_logs: Period tracking data
-cycles: Cycle calculations
-reminders: User reminders
+---
+
+## 🗄️ Database Schema
+
+- **users** – User information and authentication  
+- **period_logs** – Period dates and symptoms  
+- **cycles** – Calculated cycle patterns  
+- **reminders** – Reminder settings and schedules  
+
+---
